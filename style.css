@@ -1,0 +1,264 @@
+body {
+    font-family: Lato;
+    margin: 0;       
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 11px;
+    background: #403152;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    z-index:1;
+       
+  }
+
+li {
+    display: inline;
+   
+  }   
+
+ li a {
+    text-decoration: none;
+    color: white;
+    padding: 30px 40px;
+    font-weight: bolder;
+            
+ } 
+
+ li a:hover:not(.active) {
+    background-color: black;
+
+  }
+
+  #welcome-section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 0;
+      background-color:silver;
+      background-image:
+      radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+      radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+      radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+      radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+      radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+      background-size: 200px 100px;
+    
+     
+  }
+
+  .welcome-box {
+    background-color: black;
+    opacity: 0.75;
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    margin-top: 100px;
+    
+
+}
+
+  .about {
+      font-style: italic;
+      font-size: 1.5rem;
+      font-weight: normal;
+             
+  }
+
+  #projects {
+    background-image: linear-gradient(#ffffff 0%, silver 100%);
+    padding-bottom: 160px;
+  
+  }
+
+  .projects-header {
+    padding-top: 120px;
+  }
+
+
+  .projects-grid {
+      display: grid;
+      grid-template-columns: 600px 600px;
+      justify-content: center;
+          
+  }
+
+  .project-item {     
+      text-align: center;
+      padding: 30px;
+         
+    }
+
+  img {
+      width: 100%;
+      height: 300px;
+   
+  }
+
+  .text-link {
+      text-decoration: none;
+      
+  }
+
+  .project-title {
+    background: #403152;
+    padding: 30px;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
+    
+  }
+
+  .project:hover {
+    animation: bounce 1s;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+
+  h1 {
+      padding-top: 80px;
+  }
+
+  h2 {
+      text-align: center;
+      
+      font-size: 3rem;
+      margin-top: 0;
+  }
+
+  .btn-section {
+      padding-top: 100px;
+      text-align: center;
+          
+  }
+
+  .btn {
+    background: #403152;
+    padding: 20px 30px;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+          
+  }
+
+  .btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+  footer {
+    background-image:
+    radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+    background-size: 200px 100px;
+    text-align: center;
+    padding-bottom: 100px;
+
+  }
+
+  .fa {
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin: 20px;
+    width: 180px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
+              
+  }
+  
+  .fa:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+  .fa-linkedin {
+    background: #403152;
+    color: #f2f2f2;
+  }
+
+  .fa-github {
+    background: #403152;
+    color: #f2f2f2;
+  }
+
+  .fa-at {
+    background: #403152;
+    color: #f2f2f2;
+  }
+
+  .fa-mobile-alt {
+    background: #403152;
+    color: #f2f2f2;
+  }
+
+  .link-font {
+    font-family: Lato;
+    font-weight: normal;
+  }
+
+
+  .footer-box > p {
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 0;
+    
+  }
+
+  .footer-link {
+    padding-top: 50px;
+  }
+
+  .footer-box {
+    background-color: black;
+    opacity: 0.75;
+    width: 50%;
+    margin-top: 100px;
+    color: white;
+    display: inline-block;
+    padding: 40px;
+  }
+
+
+  @media only screen and (max-widgth 800px) {
+    body {
+      display: flex;
+      font-size: 0.9rem;
+    }
+  }
+
+
+  
